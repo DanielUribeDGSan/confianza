@@ -1,0 +1,151 @@
+:root {
+  --negro: #000000;
+  --blanco: #ffffff;
+  --gris: #E8E8E8;
+  --gris-texto: #959595;
+  --azul: #0072bc;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100% !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+body.swal2-height-auto {
+  height: 100% !important;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.logo {
+  width: 70%;
+}
+
+.label {
+  color: var(--blanco);
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.form-control-info::placeholder {
+  color: var(--blanco);
+}
+
+.form-control-info {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--blanco);
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid var(--blanco);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  outline: none;
+  border-radius: .25rem;
+}
+
+.form-control-info-area {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--blanco);
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 1px solid var(--blanco);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  outline: none;
+  border-radius: .25rem;
+}
+
+.btn-light, .btn-light:hover {
+  color: #ffffff;
+  background-color: transparent;
+  border-color: #f8f9fa;
+  padding: .375rem 4.75rem;
+  font-size: 1.5rem;
+}
+
+/** Utilidades **/
+.centrar-f {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centrar {
+  display: block;
+  margin: 0 auto;
+}
+
+.bg-azul {
+  background-color: var(--azul);
+}
+
+.h-lg-100 {
+  min-height: 100%;
+}
+
+.w-lg-80 {
+  width: 80%;
+}
+
+.w-lg-100 {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .parte_1 {
+    min-height: 30%;
+  }
+
+  .parte_2 {
+    min-height: 70%;
+  }
+}
+
+@media (max-width: 751px) {
+  .label {
+    font-size: 1.5rem;
+  }
+
+  .btn-light {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .parte_1 {
+    min-height: 20%;
+  }
+
+  .parte_2 {
+    min-height: 80%;
+  }
+}
