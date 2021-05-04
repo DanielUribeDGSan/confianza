@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body.swal2-height-auto {
@@ -150,8 +150,4 @@ body.swal2-height-auto {
   }
 }
 
-@media (max-width: 360px) {
-  body {
-    overflow: auto;
-  }
-}
+@media (max-width: 360px) {}
